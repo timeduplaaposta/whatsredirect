@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando para o WhatsApp...</title>
+    <script>
+      const numeros = [
+        "553173061947",
+        "553173089079",
+        "553173061962",
+        "5531973051585"
+      ];
+      const mensagem = "Atila, quero participar!";
+      const escolhido = numeros[Math.floor(Math.random() * numeros.length)];
+      const link = `https://wa.me/${escolhido}?text=${encodeURIComponent(mensagem)}`;
+      window.location.href = link;
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando para o WhatsApp...</p>
+  </body>
+</html>
